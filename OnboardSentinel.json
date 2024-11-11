@@ -6,7 +6,8 @@
             "type": "string"
         },
         "workspaceLocation": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "australiasoutheast"
         }
     },
     "resources": [
