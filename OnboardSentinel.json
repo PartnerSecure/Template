@@ -6,7 +6,32 @@
             "type": "string"
         },
         "workspaceLocation": {
-            "type": "string"
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "enum": [
+                        "East Asia",
+                        "Southeast Asia",
+                        "Central US",
+                        "East US",
+                        "East US 2",
+                        "West US",
+                        "North Central US",
+                        "South Central US",
+                        "North Europe",
+                        "West Europe",
+                        "Japan West",
+                        "Japan East",
+                        "Brazil South",
+                        "Australia East",
+                        "Australia Southeast",
+                        "global"
+                    ]
+                }
+            ],
+            "description": "Location to deploy resource to"
         }
     },
     "resources": [
